@@ -12,3 +12,7 @@ Kris Birgis
 
 
 Ein af gellunum í tíma er mamma er með 4 krakka. 1 herbergi sem gamer herbergið með tölvu og skjá fyrir alla. Box púða og fullt af shitti.
+
+While virkar þannig: checka alltaf hvort að lykkjan sé true eða false. while(getYesNo('continue?'));
+
+til að flippa boolian er notað !getYesNo

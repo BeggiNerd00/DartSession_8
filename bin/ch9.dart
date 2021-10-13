@@ -13,14 +13,16 @@
 
 
  */
-
+import 'dart:io';
+import 'ch5.dart';
+import 'ch7.dart';
 
 void main() {
   print('Hello human, I need some numbers.');
   bool continueRunning = true;
   List<int> myNumbers = [];
-  while(continueRunning) {
-
+  while(!getYesNo('Stop?')) {
+    myNumbers.add(getInt('Next number?'));
   }
   print('The numbers you gave me were: $myNumbers');
 }

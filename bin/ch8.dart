@@ -10,8 +10,8 @@
  */
 
 
-String fastFood(){
-  String places = 'BurgerKing';
+List<String> fastFood(){
+  List<String> places = ['BurgerKing', 'McDonalds', 'KFC', 'Wokon'];
   return places;
 }
 

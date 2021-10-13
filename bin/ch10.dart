@@ -9,9 +9,20 @@
 
  */
 
+import 'ch5.dart';
+import 'ch7.dart';
+
+
+List<int> getIntList(String prompt) {
+  print(prompt);
+  List<int> myNumbers = [];
+  while(!getYesNo('Stop?')) {
+    myNumbers.add(getInt('Next number?'));
+  }
+  return myNumbers;
+}
+
 void main() {
-
-  List<int> yourList = []; // Change [] for your new getIntList method.
+  List<int> yourList = getIntList('Give me some numbers!'); // Change [] for your new getIntList method.
   print('After running your function, I got $yourList');
-
 }

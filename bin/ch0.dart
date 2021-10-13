@@ -31,17 +31,37 @@
   greeting method, using the variable userName as input.
 
  */
-
-
-String main2(){
-
-}
+import 'dart:io';
 
 void main() {
-  main2();
-  main3();
+  print('Please enter your name');
+
+  String userName = stdin.readLineSync();
+  greetings(userName);
 }
 
-void main3(){
-
+void greetings(String name) {
+  print('Hello $name.');
 }
+
+
+
+
+
+
+
+/*
+
+String friendsName(String name, String lastName){
+  return '$name $lastName';
+}
+void main() {
+  String name= friendsName('Beggi', 'Hallgrims');
+  print(name);
+  return(greeting(friendsName));
+}
+void greeting(String name) {
+  print('Hello $name');
+}
+
+ */

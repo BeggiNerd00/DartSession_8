@@ -16,17 +16,19 @@
 
  */
 
-void main() {
+import 'dart:io';
 
+void main() {
+  String name = getName();
+  printString('Hello $name');
 }
 
-// Create getName here
+String getName(){
+  print('What is your name?');
+  String userName = stdin.readLineSync();
+  return userName;
+}
 
-
-// Create getName here
-
-// Paste printString() here
-
-
-// Paste printString() here
-
+void printString(String printThis){
+  print(printThis);
+}

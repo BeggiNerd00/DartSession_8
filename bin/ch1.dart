@@ -43,14 +43,24 @@
 
 void main() {
 
+  loner();
 }
 
 
 void loner(){
   print('Leave me alone!');
+
+  //Geymir giver inni hólfi sem ég skýri "giverNumber", svoleiðis að giver er ekki hægt að kalla í nema mep "int givernumber"
+  int giverNumber = giver();
+
+  taker(giverNumber);
+
+  double moneyLef = sharer(giverNumber);
+  print('I got $giverNumber left');
 }
 
 int giver(){
+  //Hversu mikinn pening er "skuldað".
   int money = 100;
   return money;
 }

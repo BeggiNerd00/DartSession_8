@@ -12,8 +12,14 @@
 
  */
 
-void main() {
+import 'dart:io';
 
+void printString(String printThis) {
+  print(printThis);
+}
+void main() {
+  printString('Hello');
+  printString('Does this work?');
 }
 
 // Your method printString, here

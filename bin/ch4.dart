@@ -13,7 +13,25 @@
 
 // Paste getName here
 
-void main() {
-  
+import 'dart:io';
+
+String getName(String printThis){
+  print(printThis);   // 'What is your name?' ---changed ----> printThis
+  String userName = stdin.readLineSync();
+  return userName;
 }
+
+void main() {
+
+  String name = getName('Hello man, What are you called?: ');
+  print('Ok, $name');
+  //String name = getName();
+  //printString('Hello $name');
+}
+
+void printString(String printThis) {
+  print(printThis);
+}
+
+
 

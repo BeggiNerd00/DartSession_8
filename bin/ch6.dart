@@ -23,11 +23,17 @@
 import 'dart:io';
 
 void main() {
-  String userAns = stdin.readLineSync();
-  bool ans;
-  // Your code here
-
-
-  // Your code here
-  print('User put in $userAns, bool is now $ans');
+  bool getYesNo(String prompt) {
+    bool answer;
+    while (answer == null) {
+      String userAnswer = getString(prompt);
+      // Your code here
+      if (userAnswer.toLowerCase() == 'yes') {
+        answer = true;
+      } else if (userAnswer.toLowerCase() == 'no') {
+        answer = false;
+      }
+    }
+    return answer;
+  }
 }

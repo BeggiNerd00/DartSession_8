@@ -16,7 +16,6 @@
 import 'ch5.dart';
 
 
-void getYesNo(){
   // Code from ch6 solution should be used inside here
   bool getYesNo(String prompt){
     bool answer;
@@ -31,7 +30,7 @@ void getYesNo(){
     }
     return answer;
   }
-}
+
 
 
 void main() {
